@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.offcn.mapper.StaMapper">
+	
+	<!-- public List<Sta> getSta(); -->
+	<select id="getSta" resultType="com.offcn.bean.Sta">
+		select name,stock,sales
+		from goods
+		limit 1,15;
+	</select>
+	
+</mapper>
